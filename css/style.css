@@ -466,6 +466,7 @@ input[type=radio]:checked:before {
 
 .bg-img {
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
@@ -1185,19 +1186,20 @@ body.offcanvason .oliven-nav-toggle {
 }
 
 .bridegroom .info h6 {
-    font-size: 24px;
+    font-size: 32px;
     margin-bottom: 5px;
 }
 
 .bridegroom .info h6 i {
     color: #BD945A;
-    font-size: 16px;
+    font-size: 22px;
 }
 
 .bridegroom .info span {
     color: #BD945A;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 400;
+    margin-top: 10px;
     font-family: 'Alex Brush', cursive;
 }
 
@@ -1704,6 +1706,8 @@ body.offcanvason .oliven-nav-toggle {
 .whenwhere .item .whenwhere-img img {
     -webkit-transition: all .5s;
     transition: all .5s;
+    width: 100%;
+    height: 240px;
 }
 
 .whenwhere .item .content {
@@ -2338,6 +2342,20 @@ body.offcanvason .oliven-nav-toggle {
 }
 .blog-pagination-wrap li a i { 
     font-size: 11px;
+}
+a.buttono  {
+    font-family: 'Nunito Sans', sans-serif;
+    background: #BD945A;
+    border: 1px solid #BD945A;
+    color: #fff;
+    padding: 15px 30px;
+    margin: 0;
+    font-weight: 400;
+    position: relative;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 0px;
 }
 @media screen and (max-width: 768px) {
     .blog-pagination-wrap {
