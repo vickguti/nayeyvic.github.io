@@ -1589,12 +1589,12 @@ body.offcanvason .oliven-nav-toggle {
     line-height: 1em;
 }
 
-.seeyou .section-head h4 {
+.seeyou .section-head h5 {
     position: relative;
     color: #fff;
-    font-family: 'Alex Brush', cursive;
+    font-family: 'Alex Brush';
     font-weight: 400;
-    font-size: 60px;
+    font-size: 30px;
     margin-bottom: 0;
 }
 
