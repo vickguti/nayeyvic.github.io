@@ -21,9 +21,9 @@
         }
     };
     // Preloader
-    $(window).load(function() {
-    $('.preloader').fadeOut("slow");
-    });
+    // $(window).load(function() {
+    //     $('.preloader').fadeOut("slow");
+    // });
     // Animations
     var contentWayPoint = function () {
         var i = 0;

@@ -23,9 +23,21 @@
 
 <body>
     <!-- Preloader -->
-    <div class="preloader">
-        <div class="lds-heart">
+    <div class="preloader" id="intro">
+        <!-- <div class="lds-heart">
             <div></div>
+        </div> -->
+        <div class="intro-content">
+            <div class="monogram">
+                N <span>&</span> V
+            </div>
+            <h2>Nayely & Víctor</h2>
+            <p id="saludo">
+                Nos llena de alegría compartir contigo este momento tan especial.
+            </p>
+            <button id="btnOpen">
+                Abrir invitación
+            </button>
         </div>
     </div>
     <!-- Main -->
@@ -324,6 +336,11 @@
                 </div>
             </div>
         </div>
+        <audio id="bgMusic" loop preload="auto">
+            <source src="music/song.mp3" type="audio/mpeg">
+            <!-- Tu navegador no soporta audio. -->
+        </audio>
+        
         <!-- jQuery -->
         <script src="js/jquery.min.js"></script>
         <script src="js/modernizr-2.6.2.min.js"></script>
@@ -353,8 +370,24 @@
                     animationDuration: 10000
                 });
             });
+            const btn = document.getElementById('btnOpen');
+            // INTRO
+            const intro = document.getElementById('intro');
+            const audio = document.getElementById('bgMusic');
 
+            btn.addEventListener('click', async () => {
+
+                try {
+                    await audio.play();
+                } catch(e){
+                    console.log(e);
+                }
+
+                intro.classList.add('hide');
+
+            });
         </script>
     </div>
+    
 </body>
 </html>

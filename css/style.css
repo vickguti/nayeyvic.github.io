@@ -1959,15 +1959,46 @@ body.offcanvason .oliven-nav-toggle {
     height: 100%;
     background: #fff;
     position: fixed;
-    top: 0;
-    left: 0;
+    /* top: 0;
+    left: 0; */
+    inset: 0;
     z-index: 10000;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all .8s ease;
 }
 
+.preloader.hide {
+    opacity: 0;
+    visibility: hidden;
+}
 
+.intro-content{
+    text-align:center;
+    padding:20px;
+}
+
+.monogram{
+    font-size:80px;
+    font-family:'Cormorant Garamond', serif;
+    color:#b79a65;
+    margin-bottom:20px;
+}
+
+.monogram span{
+    font-size:50px;
+    margin:0 10px;
+}
+
+#btnOpen{
+    margin-top:20px;
+    border:1px solid #b79a65;
+    background:transparent;
+    color:#b79a65;
+    padding:12px 30px;
+    cursor:pointer;
+}
 /* Heart */
 
 .lds-heart {
