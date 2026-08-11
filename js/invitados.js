@@ -99,7 +99,6 @@ document.addEventListener('DOMContentLoaded', async () => {
                 `${API_URL}/guests/${encodeURIComponent(guestCode)}/rsvp`,
                 {
                     method: 'POST',
-
                     headers: {
                         'Content-Type': 'application/json',
                         'Accept': 'application/json'
