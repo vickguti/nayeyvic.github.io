@@ -252,46 +252,111 @@
                 </div>
             </div>
             <!-- Confirmation -->
-            <div id="rsvp" class="section-padding bg-img bg-fixed " data-background="images/banner-2.jpg">
+            <div id="rsvp" class="section-padding bg-img bg-fixed" data-background="images/banner-2.jpg">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6 offset-md-3 bg-white p-40"> <span class="oliven-title-meta text-center"></span>
-                            <h2 class="oliven-title text-center">Confirma tu asistencia</h2>
+                        <div class="col-md-6 offset-md-3 bg-white p-40">
+
+                            <span class="oliven-title-meta text-center"></span>
+
+                            <h2 class="oliven-title text-center">
+                                Confirma tu asistencia
+                            </h2>
+
                             <br>
+
+                            <!-- FORMULARIO -->
                             <form id="rsvp-form" class="contact__form">
-                            <!-- form message -->
-                            <div class="row">
-                                <div class="col-12">
-                                    <div id="rsvp-message" class="alert alert-success contact__msg" style="display: none" role="alert">
-                                        Se envió tu mensaje y se confirmó tu asistencia.
+
+                                <!-- Mensaje de error -->
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div
+                                            id="rsvp-error"
+                                            class="alert alert-danger"
+                                            style="display: none"
+                                            role="alert">
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <!-- form element -->
-                            <div id="rsvp_fields" class="row">
-                                <div class="col-md-12">
-                                    <div class="form-group text-center">
-                                        <h4 id="guest-name"></h4>
+
+                                <!-- Campos del formulario -->
+                                <div id="rsvp_fields" class="row">
+
+                                    <div class="col-md-12">
+                                        <div class="form-group text-center">
+                                            <h4 id="guest-name"></h4>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <select name="guests" id="guests" class="form-control" required>
-                                            <option value="">Personas confirmadas</option>
-                                        </select>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+
+                                            <select
+                                                name="guests"
+                                                id="guests"
+                                                class="form-control"
+                                                required>
+
+                                                <option value="">
+                                                    Personas confirmadas
+                                                </option>
+
+                                            </select>
+
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Déjanos un mensaje"></textarea>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+
+                                            <textarea
+                                                name="message"
+                                                id="message"
+                                                cols="30"
+                                                rows="7"
+                                                class="form-control"
+                                                placeholder="Déjanos un mensaje">
+                                            </textarea>
+
+                                        </div>
                                     </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+
+                                            <input
+                                                id="rsvp-submit"
+                                                name="submit"
+                                                type="submit"
+                                                class="btn button"
+                                                value="Confirmar asistencia">
+
+                                        </div>
+                                    </div>
+
                                 </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <input id="rsvp-submit" name="submit" type="submit" class="btn button" value="Confirmar asistencia"> </div>
-                                </div>
-                            </div>
+
                             </form>
+
+                            <!-- MENSAJE CUANDO YA CONFIRMÓ -->
+                            <div
+                                id="rsvp-confirmed"
+                                class="row"
+                                style="display: none;">
+
+                                <div class="col-12">
+                                    <div
+                                        class="alert alert-success text-center"
+                                        role="alert">
+
+                                        Ya recibimos tu confirmación de asistencia.
+
+                                    </div>
+                                </div>
+
+                            </div>
+
                         </div>
                     </div>
                 </div>
