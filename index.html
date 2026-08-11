@@ -250,23 +250,23 @@
                 </div>
             </div>
             <!-- Confirmation -->
-            <div id="rsvp" class="section-padding bg-img bg-fixed " data-background="images/banner-2.jpg">
+            <div id="rsvp" class="section-padding bg-img bg-fixed " data-background="images/banner-2.jpg" style="display: none;">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 offset-md-3 bg-white p-40"> <span class="oliven-title-meta text-center"></span>
                             <h2 class="oliven-title text-center">Confirma tu asistencia</h2>
                             <br>
-                            <form class="contact__form" method="post" action="mail.php">
+                            <form id="rsvp-form" class="contact__form">
                             <!-- form message -->
                             <div class="row">
                                 <div class="col-12">
-                                    <div class="alert alert-success contact__msg" style="display: none" role="alert">
+                                    <div id="rsvp-message" class="alert alert-success contact__msg" style="display: none" role="alert">
                                         Se envió tu mensaje y se confirmó tu asistencia.
                                     </div>
                                 </div>
                             </div>
                             <!-- form element -->
-                            <div class="row">
+                            <div id="rsvp_fields" class="row">
                                 <div class="col-md-12">
                                     <div class="form-group text-center">
                                         <h4 id="guest-name"></h4>
