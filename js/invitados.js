@@ -46,6 +46,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         console.log('Invitado:', guest);
 
+        document.getElementById('invitation-guest').textContent = `${guest.guest_name}`;
 
         // =================================================
         // INVITADO YA CONFIRMÓ
@@ -66,8 +67,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         // =================================================
 
         guestName.textContent = guest.guest_name;
-        
-        document.getElementById('invitation-guest').textContent = `Para ${guest.guest_name}`;
 
 
         // Llenar opciones de personas
