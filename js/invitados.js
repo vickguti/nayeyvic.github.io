@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     const guestName = document.getElementById('guest-name');
     const guestsSelect = document.getElementById('guests');
+    const guestsMessage = document.getElementById('message');
     const submitButton = document.getElementById('rsvp-submit');
 
     const params = new URLSearchParams(window.location.search);
@@ -101,6 +102,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             event.preventDefault();
 
             const confirmedGuests = Number(guestsSelect.value);
+            const messageGuests = guestsMessage.value;
 
             if (!confirmedGuests) {
                 return;
@@ -129,7 +131,8 @@ document.addEventListener('DOMContentLoaded', async () => {
                         },
 
                         body: JSON.stringify({
-                            confirmed_guests: confirmedGuests
+                            confirmed_guests: confirmedGuests,
+                            message_guests: messageGuests,
                         })
                     }
                 );
